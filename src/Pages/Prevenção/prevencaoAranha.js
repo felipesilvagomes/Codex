@@ -20,14 +20,8 @@ export default function PrevencaoAranha({ navigation }) {
                     <View style={styles.cabecalhoEsquerdo}>
 
                         <Pressable
-                            style={styles.botaoVoltar}
-                            onPress={() => {
-                                if (navigation.canGoBack()) {
-                                    navigation.goBack();
-                                } else {
-                                    navigation.navigate("Prevencao");
-                                }
-                            }}
+                        style={styles.botaoVoltar}
+                        onPress={() => navigation.navigate('Prevencao')}
                         >
                             <Image
                                 source={require("../../../assets/SetaDefinitivaVerde.png")}

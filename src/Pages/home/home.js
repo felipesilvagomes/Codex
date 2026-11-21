@@ -110,7 +110,7 @@ export default function Home({ navigation }) {
 
                         <View style={styles.gradeCards}>
 
-                            <Pressable style={styles.card}>
+                            <Pressable style={styles.card} onPress={() => navigation.navigate('Animais')}>
 
                                 <Image
                                     style={styles.fotoIcone}

@@ -7,6 +7,7 @@ import Login from "./src/Pages/Login/login";
 import Home from "./src/Pages/home/home";
 import Prevencao from "./src/Pages/Prevenção/prevencao";
 import PrevencaoAranha from "./src/Pages/Prevenção/prevencaoAranha";
+import Animais from "./src/Pages/Animais/animais";
 
 const Stack = createNativeStackNavigator();
 
@@ -43,6 +44,12 @@ export default function App() {
                 <Stack.Screen
                     name="PrevencaoAranha"
                     component={PrevencaoAranha}
+                    options={{ headerShown: false }}
+                />
+
+                <Stack.Screen
+                    name="Animais"
+                    component={Animais}
                     options={{ headerShown: false }}
                 />
 

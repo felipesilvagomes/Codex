@@ -1,6 +1,4 @@
 
-import { StatusBar } from "expo-status-bar";
-
 import { Text, View, Image, ScrollView, Pressable } from "react-native";
 
 import styles from "./prevencaoStyle";
@@ -8,8 +6,6 @@ import styles from "./prevencaoStyle";
 export default function Prevencao({ navigation }) {
     return (
         <View style={styles.container}>
-
-            <StatusBar style="dark" />
 
             <ScrollView
                 showsVerticalScrollIndicator={false}
