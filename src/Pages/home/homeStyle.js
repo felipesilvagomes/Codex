@@ -310,6 +310,12 @@ export default StyleSheet.create({
         resizeMode: "contain",
     },
 
+    iconeNavegacaoCam:{
+        width: 32,
+        height: 32,
+        resizeMode: "contain",
+    },
+
     iconeLivro: {
         fontSize: 25,
         color: "#7D8E7D",

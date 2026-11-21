@@ -1,14 +1,7 @@
 
 import { StatusBar } from "expo-status-bar";
 
-import {
-    Text,
-    View,
-    Image,
-    TextInput,
-    ScrollView,
-    Pressable
-} from "react-native";
+import { Text,  View,  Image, TextInput, ScrollView, Pressable } from "react-native";
 
 import styles from "./homeStyle";
 
@@ -18,13 +11,11 @@ export default function Home({ navigation }) {
 
             <StatusBar style="light" />
 
-            {/* CONTEÚDO ROLÁVEL */}
             <ScrollView
                 showsVerticalScrollIndicator={false}
                 contentContainerStyle={styles.conteudoScroll}
             >
 
-                {/* CABEÇALHO */}
                 <View style={styles.cabecalho}>
 
                     <View style={styles.linhaCabecalho}>
@@ -70,10 +61,8 @@ export default function Home({ navigation }) {
 
                 </View>
 
-                {/* CONTEÚDO PRINCIPAL */}
                 <View style={styles.container2}>
 
-                    {/* PESQUISA */}
                     <View style={styles.pesquisa}>
 
                         <Image
@@ -89,7 +78,6 @@ export default function Home({ navigation }) {
 
                     </View>
 
-                    {/* CARD DE ORIENTAÇÃO */}
                     <View style={styles.cardOrientacao}>
 
                         <View style={styles.destaque}>
@@ -114,7 +102,6 @@ export default function Home({ navigation }) {
 
                     </View>
 
-                    {/* CATEGORIAS */}
                     <View style={styles.container3}>
 
                         <Text style={styles.tituloCategorias}>
@@ -123,7 +110,6 @@ export default function Home({ navigation }) {
 
                         <View style={styles.gradeCards}>
 
-                            {/* ANIMAIS */}
                             <Pressable style={styles.card}>
 
                                 <Image
@@ -141,7 +127,6 @@ export default function Home({ navigation }) {
 
                             </Pressable>
 
-                            {/* INSETOS */}
                             <Pressable style={styles.card}>
 
                                 <Image
@@ -159,8 +144,7 @@ export default function Home({ navigation }) {
 
                             </Pressable>
 
-                            {/* PREVENÇÃO */}
-                            <Pressable style={styles.card}>
+                            <Pressable style={styles.card} onPress={() => navigation.navigate('Prevencao')}>
 
                                 <Image
                                     style={styles.fotoIconeFlor}
@@ -177,7 +161,6 @@ export default function Home({ navigation }) {
 
                             </Pressable>
 
-                            {/* PRAGAS URBANAS */}
                             <Pressable style={styles.card}>
 
                                 <Image
@@ -199,8 +182,7 @@ export default function Home({ navigation }) {
 
                     </View>
 
-                    {/* DICA */}
-                    <View style={styles.dica}>
+                  <View style={styles.dica}>
 
                         <View style={styles.linhaDica}>
 
@@ -227,7 +209,6 @@ export default function Home({ navigation }) {
 
             </ScrollView>
 
-            {/* BARRA DE NAVEGAÇÃO INFERIOR */}
             <View style={styles.barraNavegacao}>
 
                 <Pressable style={styles.itemNavegacao}>
@@ -239,8 +220,8 @@ export default function Home({ navigation }) {
 
                 <Pressable style={styles.itemNavegacao}>
                     <Image
-                        source={require("../../../assets/lupa.png")}
-                        style={styles.iconeNavegacao}
+                        source={require("../../../assets/cam.png")}
+                        style={styles.iconeNavegacaoCam}
                     />
                 </Pressable>
 
