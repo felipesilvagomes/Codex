@@ -1,4 +1,6 @@
 
+import { StatusBar } from "expo-status-bar";
+
 import { Text, View, Image, ScrollView, Pressable } from "react-native";
 
 import styles from "./prevencaoStyle";
@@ -7,6 +9,8 @@ export default function Prevencao({ navigation }) {
     return (
         <View style={styles.container}>
 
+            <StatusBar style="dark" />
+
             <ScrollView
                 showsVerticalScrollIndicator={false}
                 contentContainerStyle={styles.conteudoScroll}
@@ -14,26 +18,39 @@ export default function Prevencao({ navigation }) {
 
                 <View style={styles.navBar}>
 
-                    <View>
-                        <Text style={styles.TextoCodexCabecalho}>
-                            Codex
-                        </Text>
+                    <View style={styles.linhaNav}>
 
-                        <Text style={styles.segTextoCabecalho}>
+                        <Pressable
+                            style={styles.botaoVoltar}
+                            onPress={() => navigation.goBack()}
+                        >
+                            <Image
+                                source={require("../../../assets/SetaDefinitivaVerde.png")}
+                                style={styles.voltarNav}
+                            />
+                        </Pressable>
+
+                        <Text style={styles.textoNav}>
                             Prevenção
                         </Text>
 
-                        <Text style={styles.segTextoCabecalho2}>
-                            Pequenos cuidados fazem toda a diferença!
-                        </Text>
                     </View>
 
-                    <Image
-                        source={require("../../../assets/logoX.png")}
-                        style={styles.navbarImage}
-                    />
+                    <View style={styles.areaSubtitulo}>
+
+                        <Text style={styles.subTextoNav}>
+                            Pequenos cuidados fazem toda a diferença!
+                        </Text>
+
+                        <Text style={styles.subTextoNav2}>
+                            Aprenda a prevenir o aparecimento de animais
+                            e pragas e mantenha seu ambiente protegido.
+                        </Text>
+
+                    </View>
 
                 </View>
+
                 <View style={styles.container2}>
 
                     <View style={styles.cardInicial}>
@@ -59,14 +76,27 @@ export default function Prevencao({ navigation }) {
                     </View>
 
                 </View>
+
                 <View style={styles.container3}>
 
-                    <Text style={styles.tituloAnimais}>
-                        O que você deseja prevenir?
-                    </Text>
+                    <View style={styles.cabecalhoPrevencao}>
+
+                        <Text style={styles.tituloAnimais}>
+                            O que você deseja prevenir?
+                        </Text>
+
+                        <Text style={styles.subtituloPrevencao}>
+                            Confira algumas espécies e saiba como se proteger.
+                        </Text>
+
+                    </View>
+
                     <View style={styles.linhaCards}>
 
-                        <Pressable style={styles.cardsPrevencao} onPress={() => navigation.navigate("PrevencaoAranha")}>
+                        <Pressable
+                            style={styles.cardsPrevencao}
+                            onPress={() => navigation.navigate("PrevencaoAranha")}
+                        >
 
                             <Image
                                 source={require("../../../assets/aranha.webp")}
@@ -79,7 +109,10 @@ export default function Prevencao({ navigation }) {
 
                         </Pressable>
 
-                        <Pressable style={styles.cardsPrevencao}>
+                        <Pressable
+                            style={styles.cardsPrevencao}
+                            onPress={() => navigation.navigate("AnimaisEscorpião")}
+                        >
 
                             <Image
                                 source={require("../../../assets/escorpiao4.jpeg")}
@@ -93,6 +126,7 @@ export default function Prevencao({ navigation }) {
                         </Pressable>
 
                     </View>
+
                     <View style={styles.linhaCards}>
 
                         <Pressable style={styles.cardsPrevencao}>
@@ -126,6 +160,7 @@ export default function Prevencao({ navigation }) {
                 </View>
 
             </ScrollView>
+
             <View style={styles.barraNavegacao}>
 
                 <Pressable

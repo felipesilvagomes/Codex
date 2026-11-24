@@ -127,7 +127,7 @@ export default function Home({ navigation }) {
 
                             </Pressable>
 
-                            <Pressable style={styles.card}>
+                            <Pressable style={styles.card} onPress={() => navigation.navigate("Inseto")}>
 
                                 <Image
                                     style={styles.fotoIcone}
@@ -161,7 +161,7 @@ export default function Home({ navigation }) {
 
                             </Pressable>
 
-                            <Pressable style={styles.card}>
+                            <Pressable style={styles.card} onPress={() => navigation.navigate('Praga')}>
 
                                 <Image
                                     style={styles.fotoIcone}

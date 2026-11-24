@@ -37,18 +37,21 @@ export default function Animais({ navigation }) {
 
                     </View>
 
-                    <Text style={styles.subTextoNav}>
-                        Explore a natureza!
-                    </Text>
+                    <View style={styles.areaSubtitulo}>
 
-                    <Text style={styles.subTextoNav2}>
-                        Descubra espécies e aprenda sobre o mundo animal.
-                    </Text>
+                        <Text style={styles.subTextoNav}>
+                            Explore a natureza!
+                        </Text>
+
+                        <Text style={styles.subTextoNav2}>
+                            Descubra espécies e aprenda sobre o mundo animal.
+                        </Text>
+
+                    </View>
 
                 </View>
 
                 <View style={styles.container2}>
-
 
                     <View style={styles.pesquisa}>
 
@@ -74,7 +77,6 @@ export default function Animais({ navigation }) {
                         <View style={styles.linhaCategorias}>
 
                             <Pressable style={styles.cardCategoria}>
-
                                 <Image
                                     style={styles.fotoCard}
                                     source={require("../../../assets/ara.png")}
@@ -83,11 +85,9 @@ export default function Animais({ navigation }) {
                                 <Text style={styles.textoCard}>
                                     Aracnídeos
                                 </Text>
-
                             </Pressable>
 
                             <Pressable style={styles.cardCategoria}>
-
                                 <Image
                                     style={styles.fotoCard}
                                     source={require("../../../assets/inseto.png")}
@@ -96,11 +96,9 @@ export default function Animais({ navigation }) {
                                 <Text style={styles.textoCard}>
                                     Insetos
                                 </Text>
-
                             </Pressable>
 
                             <Pressable style={styles.cardCategoria}>
-
                                 <Image
                                     style={styles.fotoCard}
                                     source={require("../../../assets/rat.png")}
@@ -109,7 +107,6 @@ export default function Animais({ navigation }) {
                                 <Text style={styles.textoCard}>
                                     Roedores
                                 </Text>
-
                             </Pressable>
 
                         </View>
@@ -134,16 +131,15 @@ export default function Animais({ navigation }) {
 
                     <View style={styles.linhaAnimais}>
 
-
                         <View style={styles.cardAnimal}>
 
                             <Image
-                                source={require("../../../assets/aranha.webp")}
+                                source={require("../../../assets/aranha-marrom2.jpg")}
                                 style={styles.imagemAnimal}
                             />
 
                             <Text style={styles.nomeAnimal}>
-                                Aranha-armadeira
+                                Aranha-marrom
                             </Text>
 
                             <Text style={styles.descricaoAnimal}>
@@ -156,7 +152,10 @@ export default function Animais({ navigation }) {
 
                         </View>
 
-                        <View style={styles.cardAnimal}>
+                        <Pressable
+                            style={styles.cardAnimal}
+                            onPress={() => navigation.navigate("AnimaisEscorpião")}
+                        >
 
                             <Image
                                 source={require("../../../assets/escorpiao4.jpeg")}
@@ -175,27 +174,25 @@ export default function Animais({ navigation }) {
                                 Saiba mais →
                             </Text>
 
-                        </View>
+                        </Pressable>
 
                     </View>
 
-
                     <View style={styles.linhaAnimais}>
-
 
                         <View style={styles.cardAnimal}>
 
                             <Image
-                                source={require("../../../assets/mosquito.jpeg")}
+                                source={require("../../../assets/barata.jpg")}
                                 style={styles.imagemAnimal}
                             />
 
                             <Text style={styles.nomeAnimal}>
-                                Aedes aegypti
+                                Barata
                             </Text>
 
                             <Text style={styles.descricaoAnimal}>
-                                Saiba mais sobre esse mosquito.
+                                Saiba mais sobre essa barata.
                             </Text>
 
                             <Text style={styles.linkAnimal}>
@@ -230,6 +227,7 @@ export default function Animais({ navigation }) {
                 </View>
 
             </ScrollView>
+
             <View style={styles.barraNavegacao}>
 
                 <Pressable
@@ -257,6 +255,7 @@ export default function Animais({ navigation }) {
                 </Pressable>
 
             </View>
+
         </View>
     );
 }

@@ -8,6 +8,9 @@ import Home from "./src/Pages/home/home";
 import Prevencao from "./src/Pages/Prevenção/prevencao";
 import PrevencaoAranha from "./src/Pages/Prevenção/prevencaoAranha";
 import Animais from "./src/Pages/Animais/animais";
+import AnimaisEscorpião from "./src/Pages/Animais/animaisEscorpião";
+import Praga from "./src/Pages/PragasUrbanas/praga";
+import Inseto from "./src/Pages/Insetos/inseto";
 
 const Stack = createNativeStackNavigator();
 
@@ -50,6 +53,24 @@ export default function App() {
                 <Stack.Screen
                     name="Animais"
                     component={Animais}
+                    options={{ headerShown: false }}
+                />
+
+                <Stack.Screen
+                    name="AnimaisEscorpião"
+                    component={AnimaisEscorpião}
+                    options={{ headerShown: false }}
+                />
+
+                <Stack.Screen
+                    name="Praga"
+                    component={Praga}
+                    options={{ headerShown: false }}
+                />
+
+                <Stack.Screen
+                    name="Inseto"
+                    component={Inseto}
                     options={{ headerShown: false }}
                 />
 

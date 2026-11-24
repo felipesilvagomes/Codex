@@ -9,64 +9,89 @@ export default StyleSheet.create({
     },
 
     conteudoScroll: {
+        flexGrow: 1,
         paddingBottom: 30,
     },
 
     navBar: {
         width: "100%",
-        height: 150,
-        paddingHorizontal: 15,
+        paddingHorizontal: 20,
         paddingTop: 15,
+        paddingBottom: 18,
+        backgroundColor: "#F8FCF7",
+        borderBottomWidth: 1,
+        borderBottomColor: "#DCE8D9",
+    },
+
+    linhaNav: {
         flexDirection: "row",
-        justifyContent: "space-between",
-        alignItems: "flex-start",
+        alignItems: "center",
+        paddingBottom: 12,
     },
 
-    navbarImage: {
-        width: 55,
-        height: 55,
+    botaoVoltar: {
+        width: 40,
+        height: 40,
+        justifyContent: "center",
+        alignItems: "center",
+        marginRight: 10,
+    },
+
+    voltarNav: {
+        width: 30,
+        height: 30,
         resizeMode: "contain",
-        marginTop: 10,
     },
 
-    TextoCodexCabecalho: {
-        color: "#000000",
-        fontSize: 30,
-        fontWeight: "bold",
-    },
-
-    segTextoCabecalho: {
-        marginTop: 10,
+    textoNav: {
         color: "#008000",
         fontSize: 25,
         fontWeight: "bold",
     },
 
-    segTextoCabecalho2: {
+    areaSubtitulo: {
+        borderTopWidth: 1,
+        borderTopColor: "#DCE8D9",
+        paddingTop: 12,
+        paddingLeft: 5,
+    },
+
+    subTextoNav: {
+        color: "#075D19",
+        fontSize: 19,
+        fontWeight: "bold",
+    },
+
+    subTextoNav2: {
+        color: "#444444",
+        fontSize: 13.5,
         marginTop: 5,
-        color: "#008000",
-        fontSize: 13,
+        lineHeight: 20,
     },
 
     container2: {
+        width: "100%",
         paddingHorizontal: 20,
-        marginTop: 5,
+        paddingTop: 22,
     },
 
     cardInicial: {
         width: "100%",
-        height: 180,
+        minHeight: 170,
         backgroundColor: "#008000",
-        borderRadius: 25,
+        borderRadius: 18,
+        borderWidth: 1,
+        borderColor: "#D5E2D4",
         padding: 18,
         flexDirection: "row",
         alignItems: "center",
         justifyContent: "space-between",
+        elevation: 2,
     },
 
     textosCard: {
         flex: 1,
-        paddingRight: 5,
+        paddingRight: 10,
     },
 
     textoCardInicial: {
@@ -90,48 +115,61 @@ export default StyleSheet.create({
 
     container3: {
         paddingHorizontal: 20,
-        marginTop: 25,
+        paddingTop: 25,
+        paddingBottom: 10,
+    },
+
+    cabecalhoPrevencao: {
+        marginBottom: 18,
     },
 
     tituloAnimais: {
-        color: "#075D19",
-        fontSize: 19,
+        color: "#008000",
+        fontSize: 23,
         fontWeight: "bold",
-        marginBottom: 18,
+        marginBottom: 5,
+    },
+
+    subtituloPrevencao: {
+        fontSize: 13,
+        color: "#666666",
+        marginTop: 5,
     },
 
     linhaCards: {
         flexDirection: "row",
         justifyContent: "space-between",
-        marginBottom: 15,
         gap: 12,
+        marginBottom: 15,
     },
 
     cardsPrevencao: {
         flex: 1,
-        height: 175,
-        backgroundColor: "#F2F5F1",
-        borderRadius: 18,
+        backgroundColor: "#F2F8F1",
+        borderRadius: 15,
+        borderWidth: 1,
+        borderColor: "#D5E2D4",
+        padding: 10,
         alignItems: "center",
         justifyContent: "center",
-        padding: 10,
-        borderWidth: 1,
-        borderColor: "#DCE8D9",
+        elevation: 2,
+        minHeight: 155,
     },
 
     imagemAnimal: {
-        width: 110,
-        height: 110,
+        width: "100%",
+        height: 115,
         resizeMode: "contain",
-        borderRadius: 15,
+        borderRadius: 10,
+        marginBottom: 10,
     },
 
     nomeAnimal: {
         color: "#075D19",
-        fontSize: 13,
+        fontSize: 14,
         fontWeight: "bold",
         textAlign: "center",
-        marginTop: 8,
+        marginBottom: 5,
     },
 
     barraNavegacao: {
@@ -162,12 +200,6 @@ export default StyleSheet.create({
         width: 32,
         height: 32,
         resizeMode: "contain",
-    },
-
-    iconeLivro: {
-        fontSize: 25,
-        color: "#7D8E7D",
-        fontWeight: "300",
     },
 
 });

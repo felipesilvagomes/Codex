@@ -13,15 +13,21 @@ export default StyleSheet.create({
         paddingBottom: 30,
     },
 
+    // CABEÇALHO
     navBar: {
         width: "100%",
         paddingHorizontal: 20,
         paddingTop: 15,
+        paddingBottom: 18,
+        backgroundColor: "#F8FCF7",
+        borderBottomWidth: 1,
+        borderBottomColor: "#DCE8D9",
     },
 
     linhaNav: {
         flexDirection: "row",
         alignItems: "center",
+        paddingBottom: 12,
     },
 
     botaoVoltar: {
@@ -44,11 +50,18 @@ export default StyleSheet.create({
         fontWeight: "bold",
     },
 
+    // SUBTÍTULO
+    areaSubtitulo: {
+        borderTopWidth: 1,
+        borderTopColor: "#DCE8D9",
+        paddingTop: 12,
+        paddingLeft: 5,
+    },
+
     subTextoNav: {
-        color: "#008000",
-        fontSize: 25,
+        color: "#075D19",
+        fontSize: 19,
         fontWeight: "bold",
-        marginTop: 12,
     },
 
     subTextoNav2: {
@@ -57,6 +70,7 @@ export default StyleSheet.create({
         marginTop: 5,
     },
 
+    // PESQUISA E CATEGORIAS
     container2: {
         width: "100%",
         paddingHorizontal: 20,
@@ -92,6 +106,7 @@ export default StyleSheet.create({
         color: "#333333",
     },
 
+    // CATEGORIAS
     categorias: {
         width: "100%",
         marginTop: 15,
@@ -137,6 +152,7 @@ export default StyleSheet.create({
         textAlign: "center",
     },
 
+    // ANIMAIS EM DESTAQUE
     container3: {
         paddingHorizontal: 20,
         paddingTop: 5,
@@ -205,6 +221,7 @@ export default StyleSheet.create({
         marginTop: 3,
     },
 
+    // BARRA INFERIOR
     barraNavegacao: {
         height: 62,
         backgroundColor: "#F2F5F1",
@@ -240,6 +257,5 @@ export default StyleSheet.create({
         color: "#7D8E7D",
         fontWeight: "300",
     },
-
 
 });
